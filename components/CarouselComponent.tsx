@@ -39,13 +39,10 @@ const ImageOverlay: React.FC<ImageOverlayProps> = ({ item }) => {
       overflow: 'hidden',
       backgroundColor:"white",
       shadowColor:"#000",
-      shadowOffset:{
-        width:0,
-        height:4
-      },
-      shadowOpacity:0.50,
-      shadowRadius:4.65,
-      elevation:8
+       shadowOffset: { width: -5, height: 4 }, 
+       shadowOpacity: 0.52, 
+       shadowRadius: 5, 
+       elevation: 10, 
     },
     constainerimage:{
       

@@ -45,10 +45,11 @@ function MainTabNavigator() {
         },
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
-      })}
+      })
+    }
     >
-      <Tab.Screen name="Home" component={HomeScreen} options={{ tabBarLabel: "หน้าแรก", headerTitle: "หน้าแรก",headerShown:false }} />
-      <Tab.Screen name="Account" component={AccountScreen} options={{ tabBarLabel: "บัญชี", headerTitle: "บัญชี",headerShown:false }} />
+      <Tab.Screen name="Home" component={HomeScreen} options={{ tabBarLabel: "หน้าแรก",tabBarShowLabel:false, headerTitle: "หน้าแรก",headerShown:false }} />
+      <Tab.Screen name="Account" component={AccountScreen} options={{ tabBarLabel: "บัญชี",tabBarShowLabel:false, headerTitle: "บัญชี",headerShown:false }} />
     </Tab.Navigator>
   );
 }
